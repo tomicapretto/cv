@@ -22,7 +22,8 @@ library(tibble)
 # About me
 
  * Statistician interested in teaching, research and consulting.
- * I enjoy a lot working with R, but I am also learning Python.
+ * R is my main programming tool and I enjoy it a lot. Though, I am also learning Python because I think it is important to complement both.
+ * R \textbf{and} Python better than R \textbf{or} Python.
  * Big Data does not mean all data. More questions. Better ideas.
 
 # Education

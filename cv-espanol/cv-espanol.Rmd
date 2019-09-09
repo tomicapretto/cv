@@ -22,7 +22,8 @@ library(tibble)
 # Sobre mí
 
  * Licenciado en Estadística con interés en la docencia, investigación y consultoría.
- * Disfruto mucho trabajar con R, pero también me estoy formando en Python.
+ * R es mi principal herramienta de programación y la disfruto mucho. Sin embargo, también estoy aprendiendo Python porque considero que es importante poder complementar ambos.
+ * R \textbf{y} Python mejor que R \textbf{o} Python.
  * Big Data no significa todos los datos. Más preguntas. Mejores ideas.
 
 # Educación
