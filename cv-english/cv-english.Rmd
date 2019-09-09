@@ -1,0 +1,121 @@
+---
+name: Tomás
+surname: Capretto
+position: "PhD Candidate"
+address: "IMASL/CONICET"
+www: tcapretto.netlify.com
+email: "tomicapretto@gmail.com"
+github: tomicapretto
+aboutme: Statistical learning, Statistical programming, Survey sampling
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# About me
+
+ * Statistician interested in teaching, research and consulting.
+ * I enjoy a lot working with R, but I am also learning Python.
+ * Big Data does not mean all data. More questions. Better ideas.
+
+# Education
+
+```{r education}
+
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "PhD in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", "Rosario, Argentina",
+  "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", "Rosario, Argentina"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Research experience
+
+```{r research-experience}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Project:} Statistical methods in official statistics.", 
+  "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "Developed my undergraduate thesis \\textit{Estimation in complex survey samples in presence of nonresponse}.",
+  
+  "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Project:} Sampling designs based on models for populations with spatial variability.", 
+  "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "As a complement of a course in sampling techniques, I dedicated most of the time to the study of new sampling methods that incorporate spatial variability." 
+) %>%
+  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
+
+```
+
+# Teaching experience
+
+```{r teaching-experience}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Online tutor", "Aug 2018 - May 2019", "Chegg Tutors", "Remote", "Tutored Statistics, R and SAS Programming, and related topics in English.",
+  "Online tutor", "Aug 2018 - May 2019", "Chegg Tutors", "Remote", "I worekd with both undergraduate and graduate students from a very wide range of disciplines.",
+
+  "Online tutor", "Nov 2015 - Nov 2018", "Latinhire", "Remote", "Tutored Statistics both in English and Spanish.",
+  "Online tutor", "Nov 2015 - Nov 2018", "Latinhire", "Remote", "Worked with both high-school and undergraduate students.",
+
+) %>%
+  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
+
+```
+
+\pagebreak
+
+# Work experience
+
+```{r job-experience}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Consultant", "Nov 2018 - Jan 2019", "AlixPartners", "Buenos Aires, Argentina", "Data manipulation and analysis using R, Python, SQL and Tableau.", 
+  "Consultant", "Nov 2018 - Jan 2019", "AlixPartners", "Buenos Aires, Argentina", "Time series forecasting.",
+  "Consultant", "Nov 2018 - Jan 2019", "AlixPartners", "Buenos Aires, Argentina", "Task automation.", 
+  
+  "Statistical assistant", "May 2018 - Oct 2018", "Instituto Nacional de Estadística y Censos", "Buenos Aires, Argentina", "I worked on the study of non-response, its classification and treatment.", 
+  "Statistical assistant", "May 2018 - Oct 2018", "Instituto Nacional de Estadística y Censos", "Buenos Aires, Argentina", "Contributed to methodological manuals and internal reports.", 
+  "Statistical assistant", "May 2018 - Oct 2018", "Instituto Nacional de Estadística y Censos", "Buenos Aires, Argentina", "Evaluation of methods to impute missing data.", 
+  
+  "Statistical assistant", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Survey sampling study to study characteristics of members from a professional college in Santa Fe province.",
+  "Statistical assistant", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Participated in the strategy to collect the data.",
+  "Statistical assistant", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Worked on the consistency of the data bases and the generation of internal reports.",
+  "Statistical assistant", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Worked on telephone surveys and cases follow-up.",
+  
+) %>%
+  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
+
+```
+
+
+# Scholarships, awards and distinctions
+
+```{r awards}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "PhD scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "\\textbf{Topic:} Exploratory analysis of Bayesian methods.",
+  "PhD scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "Full-time position dedicated to study and research.",
+  
+  "1st Prize in the XIII Young Biometrists Contest", "Oct 2017", "Grupo Argentino de Biometría", "Rosario, Argentina", "I worked with David Presutti, Agronomic Engineering student.", 
+  "1st Prize in the XIII Young Biometrists Contest", "Oct 2017", "Grupo Argentino de Biometría", "Rosario, Argentina", "We used generalized mixed linear models to solve the proposed problem.", 
+  
+  "Fulbright scholar", "Jan 2017 - Feb 2017", "Comisión Fulbright Argentina", "Austin, United States", "I made a stay in the  University of Texas at Austin thanks to the scholarship Friends of Fulbright 2017.", 
+  "Fulbright scholar", "Jan 2017 - Feb 2017", "Comisión Fulbright Argentina", "Austin, United States", "The activities involved english training, cultural exchange, volunteering and I also attended classes in Statistics.", 
+  
+) %>% 
+  detailed_entries(what, when, with, where, why, .protect = FALSE)
+```

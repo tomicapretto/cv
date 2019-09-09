@@ -1,0 +1,121 @@
+---
+name: Tomás
+surname: Capretto
+position: "Candidato Doctoral"
+address: "IMASL/CONICET"
+www: tcapretto.netlify.com
+email: "tomicapretto@gmail.com"
+github: tomicapretto
+aboutme: Aprendizaje estadístico, Programación estadística, Muestreo
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# Sobre mí
+
+ * Licenciado en Estadística con interés en la docencia, investigación y consultoría.
+ * Disfruto mucho trabajar con R, pero también me estoy formando en Python.
+ * Big Data no significa todos los datos. Más preguntas. Mejores ideas.
+
+# Educación
+
+```{r education}
+
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Doctorado en Estadística", "2019-2024 (esperado)", "Universidad Nacional de Rosario", "Rosario, Argentina",
+  "Licenciatura en Estadística", "2014-2019", "Universidad Nacional de Rosario", "Rosario, Argentina"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Experiencia en investigación
+
+```{r research-experience}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Auxiliar de investigación", "Abr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Proyecto:} Métodos estadísticos en el ámbito oficial.", 
+    "Auxiliar de investigación", "Abr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "Desarrollé mi tesina de licenciatura \\textit{Estimación en diseños muestrales complejos en presencia de no respuesta}.",
+  
+  "Auxiliar de investigación", "Abr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Proyecto:} Diseños muestrales basados en modelos para poblaciones con variabilidad espacial.", 
+    "Auxiliar de investigación", "Abr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "Estudio de modelos que consideran variabilidad espacial." 
+) %>%
+  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
+
+```
+
+# Experiencia en docencia
+
+```{r teaching-experience}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Tutor online", "Ago 2018 - May 2019", "Chegg Tutors", "Remoto", "Clases de Estadística, R y SAS y tópicos afines en inglés.",
+  "Tutor online", "Ago 2018 - May 2019", "Chegg Tutors", "Remoto", "Trabajé con estudiantes de nivel de grado y de posgrado en un rango muy amplio de disciplinas.",
+
+  "Tutor online", "Nov 2015 - Nov 2018", "Latinhire", "Remoto", "Clases de Estadística en inglés y español.",
+  "Tutor online", "Nov 2015 - Nov 2018", "Latinhire", "Remoto", "Trabajé principalmente con estudiantes de pre-grado y grado.",
+
+) %>%
+  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
+
+```
+
+\pagebreak
+
+# Experiencia laboral
+
+```{r job-experience}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Consultant", "Nov 2018 - Ene 2019", "AlixPartners", "Buenos Aires, Argentina", "Manipulación y análisis de datos en diversos formatos utilizando R, Python, SQL y Tableau.", 
+  "Consultant", "Nov 2018 - Ene 2019", "AlixPartners", "Buenos Aires, Argentina", "Predicción de series temporales.",
+  "Consultant", "Nov 2018 - Ene 2019", "AlixPartners", "Buenos Aires, Argentina", "Automatización de tareas.", 
+  
+  "Asistente estadístico", "May 2018 - Oct 2018", "Instituto Nacional de Estadística y Censos", "Buenos Aires, Argentina", "Trabajé principalmente en el estudio de la no respuesta, su clasificación y tratamientos.", 
+  "Asistente estadístico", "May 2018 - Oct 2018", "Instituto Nacional de Estadística y Censos", "Buenos Aires, Argentina", "Colaboración en manuales metodológicos y reportes internos.", 
+  "Asistente estadístico", "May 2018 - Oct 2018", "Instituto Nacional de Estadística y Censos", "Buenos Aires, Argentina", "Evaluación de métodos para imputación de datos faltantes.", 
+  
+  "Asistente estadístico", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Estudio por muestreo para un colegio de profesional de la provincia de Santa Fe.",
+  "Asistente estadístico", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Participación en la estrategia para recolectar los datos.",
+  "Asistente estadístico", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Consistencia de base de datos y generación de reportes preliminares.",
+  "Asistente estadístico", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Realización de encuestas telefónicas y seguimiento de los casos.",
+  
+) %>%
+  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
+
+```
+
+
+# Becas, premios y distinciones
+
+```{r awards}
+
+tribble(
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "Beca doctoral en temas estratégicos", "2019 - 2024", "CONICET", "San Luis, Argentina", "\\textbf{Tema:} Análisis exploratorio de modelos Bayesianos.",
+  "Beca doctoral en temas estratégicos", "2019 - 2024", "CONICET", "San Luis, Argentina", "Dedicación exclusiva al estudio e investigación.",
+  
+  "1er Premio del XIII Concurso de Jóvenes Biometristas", "Oct 2017", "Grupo Argentino de Biometría", "Rosario, Argentina", "Trabajé en conjunto con David Presutti, estudiante de Ingeniería Agrnómica.", 
+  "1er Premio del XIII Concurso de Jóvenes Biometristas", "Oct 2017", "Grupo Argentino de Biometría", "Rosario, Argentina", "Utilizamos modelos lineales generalizados mixtos para resolver el problema propuesto.", 
+  
+  "Becario Fulbright", "Ene 2017 - Feb 2017", "Comisión Fulbright", "Austin, Estados Unidos", "Realicé una estancia en University of Texas at Austin en el marco de la beca Friends of Fulbright 2017.", 
+  "Becario Fulbright", "Ene 2017 - Feb 2017", "Comisión Fulbright", "Austin, Estados Unidos", "Perfeccionamiento del inglés, intercambio cultural, voluntariado y asistencia a cursos de estadística.", 
+  
+) %>% 
+  detailed_entries(what, when, with, where, why, .protect = FALSE)
+```
