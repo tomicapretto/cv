@@ -21,21 +21,23 @@ library(tibble)
 
 # About me
 
- * Statistician interested in teaching, research and consulting.
- * R is my main programming tool and I enjoy it a lot. Though, I am also learning Python because I think it is important to complement both.
- * R \textbf{and} Python better than R \textbf{or} Python.
- * Big Data does not mean all data. More questions. Better ideas.
+* Statistician interested in teaching, research and consulting.
+* R \textbf{and} Python better than R \textbf{or} Python:  
+R is my main programming tool and I enjoy it a lot. Though, I am investing much time in Python because I want to complement both.
+* \textbf{My thoughts in a nutshell:} Big Data does not mean all data. More questions. Better ideas.
 
 # Education
 
 ```{r education}
 
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "PhD in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", "Rosario, Argentina",
-  "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", "Rosario, Argentina"
+  ~ what, ~ when, ~ with, ~ where, ~ why,
+  
+  "PhD in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", "Rosario, Argentina", "I am working under the supervision of PhD. Osvaldo Martín on Bayesian Statistics. At the time, we are currently working on Density estimators and its implementation in the Python package Arviz.",
+  
+  "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "The career gave me a solid background in foundations of statistics and as well as the interpretation of results in an analytical manner."
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where)
+  detailed_entries(what, when, with, where, why) # Enables Latex code.
 ```
 
 # Research experience
