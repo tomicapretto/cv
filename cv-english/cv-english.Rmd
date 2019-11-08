@@ -6,7 +6,7 @@ address: "IMASL/CONICET"
 www: tcapretto.netlify.com
 email: "tomicapretto@gmail.com"
 github: tomicapretto
-aboutme: Statistical learning, Statistical programming, Survey sampling
+aboutme: "and please don't forget: all the data and endless computer power only gives a wonderful infinite collection of wrong models"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::moderncv:
@@ -24,7 +24,7 @@ library(tibble)
 * Statistician interested in teaching, research and consulting.
 * R \textbf{and} Python better than R \textbf{or} Python:  
 R is my main programming tool and I enjoy it a lot. Though, I am investing much time in Python because I want to complement both.
-* \textbf{My thoughts in a nutshell:} Big Data does not mean all data. More questions. Better ideas.
+* \textbf{My thoughts in a nutshell:} More data never hurts. But in this era where everything generates data it is more necessary than ever to have the ability to ask questions and build better ideas.
 
 # Education
 
@@ -57,7 +57,7 @@ tribble(
 
 ```
 
-# Teaching experience
+# Training experience
 
 ```{r teaching-experience}
 

@@ -6,7 +6,7 @@ address: "IMASL/CONICET"
 www: tcapretto.netlify.com
 email: "tomicapretto@gmail.com"
 github: tomicapretto
-aboutme: Aprendizaje estadístico, Programación estadística, Muestreo
+aboutme: "y no se te olvide: todos los datos y cómputo inagotable solo pueden darte una colección maravillosa de modelos incorrectos"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::moderncv:
@@ -21,10 +21,10 @@ library(tibble)
 
 # Sobre mí
 
- * Licenciado en Estadística con interés en la docencia, investigación y consultoría.
- * R es mi principal herramienta de programación y la disfruto mucho. Sin embargo, también estoy aprendiendo Python porque considero que es importante poder complementar ambos.
- * R \textbf{y} Python mejor que R \textbf{o} Python.
- * Big Data no significa todos los datos. Más preguntas. Mejores ideas.
+* Licenciado en Estadística con interés en la docencia, investigación y consultoría.
+* R \textbf{y} Python mejor que R \textbf{o} Python:  
+R es mi principal herramienta de programación y la disfruto mucho. Sin embargo, estoy invirtiendo una cantidad considerable de tiempo en Python porque considero que es importante poder complementar ambos.
+* \textbf{Qué pienso?:} Más datos nunca vienen mal. Pero en esta era donde todo supura datos es mas necesario que nunca tener la capacidad de hacer preguntas y construir mejores ideas.
 
 # Educación
 
@@ -55,7 +55,7 @@ tribble(
 
 ```
 
-# Experiencia en docencia
+# Experiencia en enseñanza
 
 ```{r teaching-experience}
 
