@@ -1,0 +1,144 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{2f3640}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Tomás Capretto}{}
+
+\position{PhD Candidate}
+\address{IMASL/CONICET}
+
+\email{\href{mailto:tomicapretto@gmail.com}{\nolinkurl{tomicapretto@gmail.com}}}
+\github{tomicapretto}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{%
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}}
+\def\detailedsection#1{\begin{cventries}#1\end{cventries}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvhonor{}{#1}{#3}{#2}}
+\def\briefsection#1{\begin{cvhonors}#1\end{cvhonors}}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {febrero 2020}
+    {Tomás Capretto~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\detailedsection{\detaileditem{PhD in Statistics}{2019-2024 (expected)}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{I am working under the supervision of PhD. Osvaldo Martin on Bayesian statistics and exploratory data analysis. At the time, we are working on density estimators and its future implementation in the Python package Arviz.}}\detaileditem{Bachelor in Statistics}{2014-2019}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{The career gave me a solid background in foundations of statistics and as well as the interpretation of results in an analytical manner.}}}
+
+\hypertarget{research-experience}{%
+\section{Research experience}\label{research-experience}}
+
+\detailedsection{\detaileditem{Research assistant}{Apr 2018 - Mar 2019}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{\textbf{Project:} Statistical methods in official statistics.}\item{Developed my undergraduate thesis \textit{Estimation in complex survey samples in presence of nonresponse}.}}\detaileditem{Research assistant}{Apr 2016 - Mar 2017}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{\textbf{Project:} Sampling designs based on models for populations with spatial variability.}\item{As a complement of a course in sampling techniques, I dedicated most of the time to the study of new sampling methods that incorporate spatial variability.}}}
+
+\hypertarget{work-experience}{%
+\section{Work experience}\label{work-experience}}
+
+\detailedsection{\detaileditem{Consultant}{Nov 2018 - Jan 2019}{AlixPartners}{Buenos Aires, Argentina}{\item{Data manipulation and analysis using R, Python, SQL and Tableau.}\item{Time series forecasting.}\item{Task automation.}}\detaileditem{Statistical assistant}{May 2018 - Oct 2018}{Instituto Nacional de Estadística y Censos}{Buenos Aires, Argentina}{\item{I worked on the study of non-response, its classification and treatment.}\item{Contributed to methodological manuals and internal reports.}\item{Evaluation of methods to impute missing data.}}\detaileditem{Statistical assistant}{Jul 2016 - Sep 2016}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{Survey sampling study to study characteristics of members from a professional college in Santa Fe province.}\item{Participated in the strategy to collect the data.}\item{Worked on the consistency of the data bases and the generation of internal reports.}\item{Worked on telephone surveys and cases follow-up.}}}
+
+\pagebreak
+
+\hypertarget{training-experience}{%
+\section{Training experience}\label{training-experience}}
+
+\detailedsection{\detaileditem{Online tutor}{Aug 2018 - May 2019}{Chegg Tutors}{Remote}{\item{Tutored Statistics, R and SAS Programming, and related topics in English.}\item{I worekd with both undergraduate and graduate students from a very wide range of disciplines.}}\detaileditem{Online tutor}{Nov 2015 - Nov 2018}{Latinhire}{Remote}{\item{Tutored Statistics both in English and Spanish.}\item{Worked with both high-school and undergraduate students.}}}
+
+\hypertarget{scholarships-awards-and-distinctions}{%
+\section{Scholarships, awards and distinctions}\label{scholarships-awards-and-distinctions}}
+
+\detailedsection{\detaileditem{PhD scholarship in strategic topics}{2019 - 2024}{CONICET}{San Luis, Argentina}{\item{\textbf{Topic:} Exploratory analysis of Bayesian methods.}\item{Full-time position dedicated to study and research.}}\detaileditem{1st Prize in the XIII Young Biometrists Contest}{Oct 2017}{Grupo Argentino de Biometría}{Rosario, Argentina}{\item{I worked with David Presutti, Agronomic Engineering student.}\item{We used generalized mixed linear models to solve the proposed problem.}}\detaileditem{Fulbright scholar}{Jan 2017 - Feb 2017}{Comisión Fulbright Argentina}{Austin, United States}{\item{I made a stay in the  University of Texas at Austin thanks to the scholarship Friends of Fulbright 2017.}\item{The activities involved english training, cultural exchange, volunteering and I also attended classes in Statistics.}}}
+
+\end{document}

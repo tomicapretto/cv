@@ -1,16 +1,17 @@
 ---
-name: Tomás
-surname: Capretto
+name: Tomás Capretto
+#surname: Capretto
 position: "PhD Candidate"
 address: "IMASL/CONICET"
-www: tcapretto.netlify.com
-email: "tomicapretto@gmail.com"
+# www: tcapretto.netlify.com
 github: tomicapretto
-aboutme: "and please don't forget: all the data and endless computer power only gives a wonderful infinite collection of wrong models"
+email: "tomicapretto@gmail.com"
+# aboutme: "Aboutme information"
 date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 2f3640
 output: 
-  vitae::moderncv:
-    theme: classic
+  vitae::awesomecv:
+    keep_tex: true
 ---
 
 ```{r setup, include=FALSE}
@@ -19,25 +20,17 @@ library(vitae)
 library(tibble)
 ```
 
-# About me
-
-* Statistician interested in teaching, research and consulting.
-* R \textbf{and} Python better than R \textbf{or} Python:  
-R is my main programming tool and I enjoy it a lot. Though, I am investing much time in Python because I want to complement both.
-* \textbf{My thoughts in a nutshell:} More data never hurts. But in this era where everything generates data it is more necessary than ever to have the ability to ask questions and build better ideas.
-
 # Education
 
 ```{r education}
-
 tribble(
-  ~ what, ~ when, ~ with, ~ where, ~ why,
+  ~ degree, ~ dates, ~ uni, ~ where, ~ details,
   
-  "PhD in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", "Rosario, Argentina", "I am working under the supervision of PhD. Osvaldo Martín on Bayesian Statistics. At the time, we are currently working on Density estimators and its implementation in the Python package Arviz.",
+  "PhD in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", "Rosario, Argentina", "I am working under the supervision of PhD. Osvaldo Martin on Bayesian statistics and exploratory data analysis. At the time, we are working on density estimators and its future implementation in the Python package Arviz.",
   
   "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "The career gave me a solid background in foundations of statistics and as well as the interpretation of results in an analytical manner."
 ) %>% 
-  detailed_entries(what, when, with, where, why) # Enables Latex code.
+  detailed_entries(degree, dates, uni, where, details) # Enables Latex code.
 ```
 
 # Research experience
@@ -45,7 +38,7 @@ tribble(
 ```{r research-experience}
 
 tribble(
-  ~ what, ~ when, ~ with, ~ where, ~ why,
+  ~ role, ~ date, ~ institution, ~ where, ~ details,
   
   "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Project:} Statistical methods in official statistics.", 
   "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "Developed my undergraduate thesis \\textit{Estimation in complex survey samples in presence of nonresponse}.",
@@ -53,36 +46,16 @@ tribble(
   "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Project:} Sampling designs based on models for populations with spatial variability.", 
   "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "As a complement of a course in sampling techniques, I dedicated most of the time to the study of new sampling methods that incorporate spatial variability." 
 ) %>%
-  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
-
+  detailed_entries(role, date, institution, where, details, .protect = FALSE) # Enables Latex code.
 ```
 
-# Training experience
-
-```{r teaching-experience}
-
-tribble(
-  ~ what, ~ when, ~ with, ~ where, ~ why,
-  
-  "Online tutor", "Aug 2018 - May 2019", "Chegg Tutors", "Remote", "Tutored Statistics, R and SAS Programming, and related topics in English.",
-  "Online tutor", "Aug 2018 - May 2019", "Chegg Tutors", "Remote", "I worekd with both undergraduate and graduate students from a very wide range of disciplines.",
-
-  "Online tutor", "Nov 2015 - Nov 2018", "Latinhire", "Remote", "Tutored Statistics both in English and Spanish.",
-  "Online tutor", "Nov 2015 - Nov 2018", "Latinhire", "Remote", "Worked with both high-school and undergraduate students.",
-
-) %>%
-  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
-
-```
-
-\pagebreak
 
 # Work experience
 
-```{r job-experience}
+```{r work-experience}
 
 tribble(
-  ~ what, ~ when, ~ with, ~ where, ~ why,
+  ~ role, ~ date, ~ company, ~ where, ~ details,
   
   "Consultant", "Nov 2018 - Jan 2019", "AlixPartners", "Buenos Aires, Argentina", "Data manipulation and analysis using R, Python, SQL and Tableau.", 
   "Consultant", "Nov 2018 - Jan 2019", "AlixPartners", "Buenos Aires, Argentina", "Time series forecasting.",
@@ -98,17 +71,36 @@ tribble(
   "Statistical assistant", "Jul 2016 - Sep 2016", "Universidad Nacional de Rosario", "Rosario, Argentina", "Worked on telephone surveys and cases follow-up.",
   
 ) %>%
-  detailed_entries(what, when, with, where, why, .protect = FALSE) # Enables Latex code.
-
+  detailed_entries(role, date, company, where, details, .protect = FALSE) # Enables Latex code.
 ```
 
+
+\pagebreak
+
+# Training experience
+
+```{r teaching-experience}
+
+tribble(
+  ~ role, ~ date, ~ company, ~ where, ~ details,
+  
+  "Online tutor", "Aug 2018 - May 2019", "Chegg Tutors", "Remote", "Tutored Statistics, R and SAS Programming, and related topics in English.",
+  "Online tutor", "Aug 2018 - May 2019", "Chegg Tutors", "Remote", "I worekd with both undergraduate and graduate students from a very wide range of disciplines.",
+
+  "Online tutor", "Nov 2015 - Nov 2018", "Latinhire", "Remote", "Tutored Statistics both in English and Spanish.",
+  "Online tutor", "Nov 2015 - Nov 2018", "Latinhire", "Remote", "Worked with both high-school and undergraduate students.",
+
+) %>%
+  detailed_entries(role, date, company, where, details, .protect = FALSE) # Enables Latex code.
+
+```
 
 # Scholarships, awards and distinctions
 
 ```{r awards}
 
 tribble(
-  ~ what, ~ when, ~ with, ~ where, ~ why,
+  ~ what, ~ date, ~ institution, ~ place, ~ details,
   
   "PhD scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "\\textbf{Topic:} Exploratory analysis of Bayesian methods.",
   "PhD scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "Full-time position dedicated to study and research.",
@@ -120,5 +112,5 @@ tribble(
   "Fulbright scholar", "Jan 2017 - Feb 2017", "Comisión Fulbright Argentina", "Austin, United States", "The activities involved english training, cultural exchange, volunteering and I also attended classes in Statistics.", 
   
 ) %>% 
-  detailed_entries(what, when, with, where, why, .protect = FALSE)
+  detailed_entries(what, date, institution, place, details, .protect = FALSE)
 ```
