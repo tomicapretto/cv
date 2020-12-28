@@ -16,8 +16,6 @@
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
-
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -59,10 +57,11 @@
 
 \name{Tomás Capretto}{}
 
-\position{PhD Candidate}
+\position{Doctorate Candidate}
 \address{IMASL/CONICET}
 
 \email{\href{mailto:tomicapretto@gmail.com}{\nolinkurl{tomicapretto@gmail.com}}}
+\homepage{tcapretto.netlify.com}
 \github{tomicapretto}
 
 % \gitlab{gitlab-id}
@@ -70,6 +69,7 @@
 % \skype{skype-id}
 % \reddit{reddit-id}
 
+\quote{Statistician interested in R, Python, R Shiny and anything that improves how we do data analysis}
 
 \usepackage{booktabs}
 
@@ -77,7 +77,7 @@
 % Arguments: what when with where why
 \usepackage{etoolbox}
 \def\detaileditem#1#2#3#4#5{%
-\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}}
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}\ifx#5\empty{\vspace{-4.0mm}}\else\fi}
 \def\detailedsection#1{\begin{cventries}#1\end{cventries}}
 
 % Templates for brief entries
@@ -102,7 +102,7 @@
 % Leave any of these blank if they are not needed
 % 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
 \makecvfooter
-  {febrero 2020}
+  {diciembre 2020}
     {Tomás Capretto~~~·~~~Curriculum Vitae}
   {\thepage}
 
@@ -117,7 +117,7 @@
 \hypertarget{education}{%
 \section{Education}\label{education}}
 
-\detailedsection{\detaileditem{PhD in Statistics}{2019-2024 (expected)}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{I am working under the supervision of PhD. Osvaldo Martin on Bayesian statistics and exploratory data analysis. At the time, we are working on density estimators and its future implementation in the Python package Arviz.}}\detaileditem{Bachelor in Statistics}{2014-2019}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{The career gave me a solid background in foundations of statistics and as well as the interpretation of results in an analytical manner.}}}
+\detailedsection{\detaileditem{Doctorate in Statistics}{2019-2024 (expected)}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{I work under the supervision of PhD. Osvaldo Martin on Bayesian statistics and exploratory data analysis.}\item{Studied density estimators and implemented a new alternative for the Python package ArviZ.This implementation was then translated to R and included in bayesplot package.}\item{Currently focused on Bambi, a Python library that makes Bayesian model building easier.}}\detaileditem{Bachelor in Statistics}{2014-2019}{Universidad Nacional de Rosario}{Rosario, Argentina}{\item{The career gave me a solid background in foundations of statistics as well as the ability to interpret results in an analytical manner.}}}
 
 \hypertarget{research-experience}{%
 \section{Research experience}\label{research-experience}}
@@ -140,5 +140,26 @@
 \section{Scholarships, awards and distinctions}\label{scholarships-awards-and-distinctions}}
 
 \detailedsection{\detaileditem{PhD scholarship in strategic topics}{2019 - 2024}{CONICET}{San Luis, Argentina}{\item{\textbf{Topic:} Exploratory analysis of Bayesian methods.}\item{Full-time position dedicated to study and research.}}\detaileditem{1st Prize in the XIII Young Biometrists Contest}{Oct 2017}{Grupo Argentino de Biometría}{Rosario, Argentina}{\item{I worked with David Presutti, Agronomic Engineering student.}\item{We used generalized mixed linear models to solve the proposed problem.}}\detaileditem{Fulbright scholar}{Jan 2017 - Feb 2017}{Comisión Fulbright Argentina}{Austin, United States}{\item{I made a stay in the  University of Texas at Austin thanks to the scholarship Friends of Fulbright 2017.}\item{The activities involved english training, cultural exchange, volunteering and I also attended classes in Statistics.}}}
+
+\hypertarget{side-projects}{%
+\section{Side projects}\label{side-projects}}
+
+Out of curiosity or fun, I also dedicate part of my time to projects not directly
+related to my doctorate.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/tomicapretto/latex2r}{\texttt{latex2r}}:
+  An R package to translate math formulas written in LaTeX to R code.
+\item
+  \href{https://github.com/tomicapretto/shinymath}{\texttt{shinymath}}: Math inputs in R Shiny apps.
+  This package gives a new input that is based on Mathquill and returns R code.
+\item
+  \href{https://github.com/tomicapretto/formulae}{\texttt{formulae}}: A WIP library that
+  enables using the popular R formulas in Python. While there is \href{https://github.com/pydata/patsy}{\texttt{patsy}}
+  out there, this implementation also handles group specific effects
+  (a.k.a. random effects), among other features.
+\end{itemize}
 
 \end{document}

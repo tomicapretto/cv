@@ -1,12 +1,12 @@
 ---
 name: Tomás Capretto
 #surname: Capretto
-position: "PhD Candidate"
+position: "Doctorate Candidate"
 address: "IMASL/CONICET"
-# www: tcapretto.netlify.com
+www: tcapretto.netlify.com
 github: tomicapretto
 email: "tomicapretto@gmail.com"
-# aboutme: "Aboutme information"
+aboutme: "Statistician interested in R, Python, R Shiny and anything that improves how we do data analysis"
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 2f3640
 output: 
@@ -25,10 +25,32 @@ library(tibble)
 ```{r education}
 tribble(
   ~ degree, ~ dates, ~ uni, ~ where, ~ details,
+  "Doctorate in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+  paste(
+    "I work under the supervision of PhD. Osvaldo Martin on Bayesian statistics",
+    "and exploratory data analysis."
+  ),
+
+  "Doctorate in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+  paste(
+    "Studied density estimators and implemented a new alternative for the Python",
+    "package ArviZ.This implementation was then translated to R and included in bayesplot package."
+  ),
   
-  "PhD in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", "Rosario, Argentina", "I am working under the supervision of PhD. Osvaldo Martin on Bayesian statistics and exploratory data analysis. At the time, we are working on density estimators and its future implementation in the Python package Arviz.",
+  "Doctorate in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+  paste(
+    "Currently focused on Bambi, a Python library that makes Bayesian model building easier."
+  ),
   
-  "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "The career gave me a solid background in foundations of statistics and as well as the interpretation of results in an analytical manner."
+  "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+  paste(
+  "The career gave me a solid background in foundations of statistics",
+  "as well as the ability to interpret results in an analytical manner."
+  ) 
 ) %>% 
   detailed_entries(degree, dates, uni, where, details) # Enables Latex code.
 ```
@@ -114,3 +136,17 @@ tribble(
 ) %>% 
   detailed_entries(what, date, institution, place, details, .protect = FALSE)
 ```
+
+# Side projects
+
+Out of curiosity or fun, I also dedicate part of my time to projects not directly 
+related to my doctorate.
+
+* [`latex2r`](https://github.com/tomicapretto/latex2r):
+An R package to translate math formulas written in LaTeX to R code.
+* [`shinymath`](https://github.com/tomicapretto/shinymath): Math inputs in R Shiny apps.
+This package gives a new input that is based on Mathquill and returns R code.
+* [`formulae`](https://github.com/tomicapretto/formulae): A WIP library that
+enables using the popular R formulas in Python. While there is [`patsy`](https://github.com/pydata/patsy)
+out there, this implementation also handles group specific effects
+(a.k.a. random effects), among other features.
