@@ -6,12 +6,12 @@ address: "IMASL/CONICET"
 www: tcapretto.netlify.com
 github: tomicapretto
 email: "tomicapretto@gmail.com"
-aboutme: "Statistician interested in R, Python, R Shiny and anything that improves how we do data analysis"
+aboutme: "Statistician interested in R, Python, R Shiny and anything that helps to make data analysis more pleasant"
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: 2f3640
+headcolor: "34495e"
 output: 
   vitae::awesomecv:
-    keep_tex: true
+    keep_tex: false
 ---
 
 ```{r setup, include=FALSE}
@@ -31,28 +31,20 @@ tribble(
     "I work under the supervision of PhD. Osvaldo Martin on Bayesian statistics",
     "and exploratory data analysis."
   ),
-
   "Doctorate in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", 
   "Rosario, Argentina", 
   paste(
-    "Studied density estimators and implemented a new alternative for the Python",
-    "package ArviZ.This implementation was then translated to R and included in bayesplot package."
+    "My goal is to create tools to help practitioners to understand and apply",
+    "statistical methods and data analysis techniques with more ease."
   ),
-  
-  "Doctorate in Statistics", "2019-2024 (expected)", "Universidad Nacional de Rosario", 
-  "Rosario, Argentina", 
-  paste(
-    "Currently focused on Bambi, a Python library that makes Bayesian model building easier."
-  ),
-  
   "Bachelor in Statistics", "2014-2019", "Universidad Nacional de Rosario", 
   "Rosario, Argentina", 
   paste(
-  "The career gave me a solid background in foundations of statistics",
-  "as well as the ability to interpret results in an analytical manner."
+    "The career gave me a solid background in foundations of statistics",
+    "as well as the ability to interpret results in an analytical manner."
   ) 
 ) %>% 
-  detailed_entries(degree, dates, uni, where, details) # Enables Latex code.
+  detailed_entries(degree, dates, uni, where, details)
 ```
 
 # Research experience
@@ -61,14 +53,21 @@ tribble(
 
 tribble(
   ~ role, ~ date, ~ institution, ~ where, ~ details,
+  "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", "\\textbf{Project:} Statistical methods in official statistics.", 
   
-  "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Project:} Statistical methods in official statistics.", 
-  "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", "Rosario, Argentina", "Developed my undergraduate thesis \\textit{Estimation in complex survey samples in presence of nonresponse}.",
+  "Research assistant", "Apr 2018 - Mar 2019", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+  "Wrote my undergraduate thesis \\textit{Estimation in complex survey samples in presence of nonresponse} under the supervision of MSc. Gonzalo Marí.",
   
-  "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "\\textbf{Project:} Sampling designs based on models for populations with spatial variability.", 
-  "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", "Rosario, Argentina", "As a complement of a course in sampling techniques, I dedicated most of the time to the study of new sampling methods that incorporate spatial variability." 
+  "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+  "\\textbf{Project:} Sampling designs based on models for populations with spatial variability.", 
+  "Research assistant", "Apr 2016 - Mar 2017", "Universidad Nacional de Rosario", 
+  "Rosario, Argentina", 
+   "As a complement of a course in sampling techniques, I dedicated most of the time to the study of new sampling methods that incorporate spatial variability." 
 ) %>%
-  detailed_entries(role, date, institution, where, details, .protect = FALSE) # Enables Latex code.
+  detailed_entries(role, date, institution, where, details, .protect = FALSE)
 ```
 
 
@@ -117,6 +116,48 @@ tribble(
 
 ```
 
+
+# Software development
+
+All of my public software develpment can be found in my [github profile](github.com/tomicapretto).
+
+## Python
+
+```{r python-pkgs}
+tribble(
+  ~ pkg, ~ when, ~ role, ~ details,
+  "ArviZ", "2020 - ", "Contributor", "A package for exploratory analysis of Bayesian models.",
+  "Bambi", "2020 - ", "Contributor", "A a high-level Bayesian model-building interface.",
+  "formulae", "2020 - ", "Author", "A WIP library that implements model formulas as in R lme4 package."
+) %>% 
+  brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+
+## R
+
+```{r r-pkgs}
+tribble(
+  ~ pkg, ~ when, ~ role, ~ details,
+  "latex2r", "2020 - ", "Author", "Translate math formulas written in LaTeX to R code.",
+  "shinymath", "2020 - ", "Author", "A new mathematical input for Shiny apps.",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+## R Shiny
+
+```{r r-shiny}
+tribble(
+  ~ pkg, ~ when, ~ role, ~ details,
+  "samp", "2021", "Author", "Visualize sampling distributions of several statistics generated from arbitrary mixtures of probability distributions.",
+  "ifuns", "2021", "Author", "Interactively tune and visualize univariate mathematical functions.",
+  "sdeshiny", "2020", "Author", "An interface for a system of differential equations solver.",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+
 # Scholarships, awards and distinctions
 
 ```{r awards}
@@ -124,8 +165,8 @@ tribble(
 tribble(
   ~ what, ~ date, ~ institution, ~ place, ~ details,
   
-  "PhD scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "\\textbf{Topic:} Exploratory analysis of Bayesian methods.",
-  "PhD scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "Full-time position dedicated to study and research.",
+  "Doctorate scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "\\textbf{Topic:} Exploratory analysis of Bayesian methods.",
+  "Doctorate scholarship in strategic topics", "2019 - 2024", "CONICET", "San Luis, Argentina", "Full-time position dedicated to study and research.",
   
   "1st Prize in the XIII Young Biometrists Contest", "Oct 2017", "Grupo Argentino de Biometría", "Rosario, Argentina", "I worked with David Presutti, Agronomic Engineering student.", 
   "1st Prize in the XIII Young Biometrists Contest", "Oct 2017", "Grupo Argentino de Biometría", "Rosario, Argentina", "We used generalized mixed linear models to solve the proposed problem.", 
@@ -137,16 +178,3 @@ tribble(
   detailed_entries(what, date, institution, place, details, .protect = FALSE)
 ```
 
-# Side projects
-
-Out of curiosity or fun, I also dedicate part of my time to projects not directly 
-related to my doctorate.
-
-* [`latex2r`](https://github.com/tomicapretto/latex2r):
-An R package to translate math formulas written in LaTeX to R code.
-* [`shinymath`](https://github.com/tomicapretto/shinymath): Math inputs in R Shiny apps.
-This package gives a new input that is based on Mathquill and returns R code.
-* [`formulae`](https://github.com/tomicapretto/formulae): A WIP library that
-enables using the popular R formulas in Python. While there is [`patsy`](https://github.com/pydata/patsy)
-out there, this implementation also handles group specific effects
-(a.k.a. random effects), among other features.
