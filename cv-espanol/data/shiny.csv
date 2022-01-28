@@ -1,0 +1,6 @@
+posicion, fecha, institucion, que, detalles
+Autor, , \href{https://github.com/tomicapretto/samp}{samp}, , Aplicación para visualizar la distribución muestral de varios estimadores generados a partir de datos aleatorios obtenidos de mezclas abritrarias de distribuciones de probabilidad.
+Autor, , \href{https://github.com/tomicapretto/ifuns}{ifuns}, , Aplicación para visualizar y tunear funciones matematicas univariadas.
+Autor, , \href{https://github.com/tomicapretto/ifuns}{ifuns}, , Este proyecto surgio para mostrar la funcionalidad y versatilidad de \pkg{shinymath}.
+Autor, , \href{https://github.com/tomicapretto/sdeshiny}{sdeshiny}, , Interface para resolver sistema de ecuaciones diferenciales.
+Autor, , \href{https://github.com/tomicapretto/sdeshiny}{sdeshiny}, , Este proyecto fue el trabajo final del curso de doctorado \textit{Modelos Matemáticos Continuos}.

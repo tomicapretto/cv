@@ -1,0 +1,4 @@
+posicion, fecha, institucion, que, detalles
+"Autor, Desarrollador", , \href{https://github.com/tomicapretto/latex2r}{latex2r}, , Implementa un intérprete que traduce fórmulas matemáticas escritas \LaTeX \ a código de \proglang{R}.
+"Autor, Desarrollador", , \href{https://github.com/tomicapretto/shinymath}{shinymath}, , Implementa un nuevo campo de entrada para fórmulas matemáticas en \pkg{Shiny}.
+"Autor, Desarrollador", , \href{https://github.com/tomicapretto/shinymath}{shinymath}, , Interactúa con \pkg{latex2r} para devolver expresiones que puedan ser entendidas por \proglang{R}.

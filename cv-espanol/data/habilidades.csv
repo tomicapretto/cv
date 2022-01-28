@@ -1,0 +1,12 @@
+posicion, fecha, institucion, que, detalles
+Experto,  , Python,  , "Dominio fluido de librerías para computación numérica y analisis de datos tales como \pkg{NumPy}, \pkg{SciPy} y \pkg{Pandas}."
+Experto,  , Python,  , "Excelente manejo de librerías para Machine Learning Probabilístico como \pkg{PyMC}."
+Experto,  , Python,  , "Manejo avanzado de \pkg{Matplotlib}. Contribuí con \href{https://www.python-graph-gallery.com/web-streamchart-with-matplotlib}{\underline{diversos}} \href{https://www.python-graph-gallery.com/web-circular-lollipop-plot-with-matplotlib}{\underline{artículos}} en \href{https://www.python-graph-gallery.com/}{\underline{The Python Gallery}}."
+Experto,  , R,  , "Tengo un conocimiento profundo de como funciona el lenguaje, lo que me permite usarlo con versatilidad y de manera eficiente."
+Experto,  , R,  , "Puedo trabajar cómodamente con librerías del \pkg{tidyverse} o cualquier otro framework."
+Experto,  , R,  , "Utilizo \pkg{ggplot2} y librerias asociadas con gran fluidez. Contribuí con \href{https://www.r-graph-gallery.com/web-lollipop-plot-with-R-the-office.html}{\underline{diversos}} \href{https://www.r-graph-gallery.com/web-circular-barplot-with-R-and-ggplot2.html}{\underline{artículos}} en \href{https://www.r-graph-gallery.com/}{\underline{The R Gallery}}."
+
+Popurrí de habilidades e intereses,  , "Otros",  , "Nivel avanzado de inglés. Nivel C1. Certificate of Advanced Enlgish (2013)."
+Popurrí de habilidades e intereses,  , "Otros",    , "Utilizo \proglang{Linux} y \proglang{Windows}. Me siento cómodo con \proglang{git}. Tengo un manejo competente de \LaTeX y \pkg{RMarkdown}."
+Popurrí de habilidades e intereses,  , "Otros",    , "Manejo algunas herramientas de desarrollo web: \proglang{Javascript}, \proglang{HTML}, \proglang{CSS}, \pkg{D3}, \pkg{React} y \pkg{Next}. Dominio fluido de \pkg{Shiny}."
+Popurrí de habilidades e intereses,  , "Otros",  , "Soy muy curioso y siempre busco aprender cosas nuevas. Para dar un ejemplo, mi curiosidad para entender como funcionaban los lenguajes de programación me llevó a el libro \href{www.craftinginterpreters.com}{\underline{Crafting Interpreters}} y terminé escribiendo mi propio intérprete en \proglang{Java}."
