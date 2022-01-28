@@ -1,16 +1,15 @@
 ---
 name: Tomás Capretto
-position: "Licenciado en Estadística"
+#surname: Capretto
+position: "Statistician"
 www: tomicapretto.github.io
 github: tomicapretto
 email: "tomicapretto@gmail.com"
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "003f5c"
+headcolor: "34495e"
 output: 
   vitae::awesomecv:
     keep_tex: false
-editor_options: 
-  chunk_output_type: console
 ---
 
 \newcommand{\pkg}[1]{{\fontseries{b}\selectfont #1}}
@@ -22,17 +21,17 @@ library(readr)
 library(tibble)
 library(vitae)
 
-data_path <- here::here("cv-espanol", "data")
+data_path <- here::here("cv-english", "data")
 ```
 
-# Educacion
+# Education
 
 ```{r education}
-read_csv(file.path(data_path, "educacion.csv"))[c(1, 4), ] %>% 
+read_csv(file.path(data_path, "educacion.csv")) %>% 
   detailed_entries(grado, fecha, institucion, lugar, detalles, .protect = FALSE)
 ```
 
-# Experiencia laboral
+# Work experience
 
 ```{r work-experience}
 d = read_csv(file.path(data_path, "laboral.csv"))
@@ -40,14 +39,7 @@ head(d, nrow(d) - 2) %>%
   detailed_entries(posicion, fecha, compania, lugar, detalles, .protect = FALSE)
 ```
 
-<!-- # Investigación -->
-
-<!-- ```{r research-experience} -->
-<!-- readr::read_csv(here::here("cv-espanol/investigacion.csv")) %>% -->
-<!--   detailed_entries(posicion, fecha, institucion, lugar, detalles, .protect = FALSE) -->
-<!-- ``` -->
-
-# Habilidades
+# Skills
 
 ```{r habilidades}
 read_csv(file.path(data_path, "habilidades.csv")) %>%
@@ -55,18 +47,24 @@ read_csv(file.path(data_path, "habilidades.csv")) %>%
   detailed_entries(posicion, fecha, institucion, que, detalles, .protect = FALSE)
 ```
 
+<!-- # Research experience -->
+<!-- ```{r research-experience} -->
+<!-- read_csv(here::here("cv-english/investigacion.csv")) %>% -->
+<!--   detailed_entries(posicion, fecha, institucion, lugar, detalles, .protect = FALSE) -->
+<!-- ``` -->
+
 \pagebreak
 
 # Software
 
-Mis proyectos de software abierto se encuentran en 
-\href{https://github.com/tomicapretto}{\underline{mi perfil de Github}}.
-Debajo incluyo algunos de los que mas se destacan o que mas disfruté hacer. 
-Al clickear sobre el nombre te dirigís hacia el repositorio del mismo.
+Almost all of my activity in software development is on my 
+\href{https://github.com/tomicapretto}{\underline{Github profile}}. Below I 
+include some of the projects that stand out the most or that I most enjoyed doing. 
+By clicking on the name of the project you go to the repository.
 
 ## Python
 
-```{r python-pkgs}
+```{r r-pkgs}
 read_csv(file.path(data_path, "python.csv")) %>%
   tidyr::replace_na(list(fecha = " ", que = " ")) %>%
   detailed_entries(posicion, fecha, institucion, que, detalles, .protect = FALSE)
@@ -74,7 +72,7 @@ read_csv(file.path(data_path, "python.csv")) %>%
 
 ## R
 
-```{r r-pkgs}
+```{r shiny}
 read_csv(file.path(data_path, "r.csv")) %>%
   tidyr::replace_na(list(fecha = " ", que = " ")) %>%
   detailed_entries(posicion, fecha, institucion, que, detalles, .protect = FALSE)
@@ -82,17 +80,9 @@ read_csv(file.path(data_path, "r.csv")) %>%
 
 ## R Shiny
 
-```{r shiny}
+```{r python-pkgs}
 read_csv(file.path(data_path, "shiny.csv")) %>%
   tidyr::replace_na(list(fecha = " ", que = " ")) %>%
   detailed_entries(posicion, fecha, institucion, que, detalles, .protect = FALSE)
 ```
 
-
-# Becas, premios y distinciones
-
-```{r awards}
-read_csv(file.path(data_path, "becas.csv")) %>%
-  tidyr::replace_na(list(fecha = " ", que = " ")) %>%
-  detailed_entries(que, fecha, institucion, que, detalles, .protect = FALSE)
-```

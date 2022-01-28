@@ -1,0 +1,4 @@
+posicion, fecha, institucion, que, detalles
+"Author", , \href{https://github.com/tomicapretto/latex2r}{latex2r}, , Implements an interpreter that translates \LaTeX math equations into \proglang{R} code.
+"Author", , \href{https://github.com/tomicapretto/shinymath}{shinymath}, , Implements a new math input for \pkg{Shiny}.
+"Author", , \href{https://github.com/tomicapretto/shinymath}{shinymath}, , Uses \pkg{latex2r} under the hood to return expressions that can be understood by \proglang{R}.

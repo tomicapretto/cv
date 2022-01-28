@@ -1,0 +1,11 @@
+posicion, fecha, institucion, que, detalles
+Author, , \href{https://github.com/tomicapretto/samplingdistributions}{samplingdistributions}, , Explore sampling distributions of several statistics computed with samples taken from arbitrary mixtures of probability distributions.
+Author, , \href{https://github.com/tomicapretto/playwithregression}{playwithregression}, , A Shiny application to play with simple linear regression fit via Least Squares method.
+Author, , \href{https://github.com/tomicapretto/playwithregression}{playwithregression}, , The main interactve vizualisation is produced with \pkg{D3} and made available via \pkg{r2d3}.
+Author, , \href{https://github.com/tomicapretto/ifuns}{ifuns}, , Vizualise and tune univariate mathematical functions.
+Author, , \href{https://github.com/tomicapretto/ifuns}{ifuns}, , This project was created to show the functionality and versatility of \ pkg {shinymath}.
+Author, , \href{https://github.com/tomicapretto/whackamole}{whackamole}, , A simple Whack-A-Mole game based on the original version made by \href{https://wesbos.com/}{\underline{Wes Bos}} as part of his \href{https://javascript30.com/}{\underline{Javascript 30}} challenge.
+Author, , \href{https://github.com/tomicapretto/rbingo}{rbingo}, , An entire system to manage and run a Bingo game made in \pkg{Shiny}. 
+Author, , \href{https://github.com/tomicapretto/rbingo}{rbingo}, , "Create games, administer vendors and sales, play the game, and obtain automated reports."
+Author, , \href{https://github.com/tomicapretto/rbingo}{rbingo}, , This app was created for a club in my community and thus is written in Spanish. 
+Author, , \href{https://github.com/tomicapretto/rbingo}{rbingo}, , The version they use is a desktop app created with \pkg{Electron}.

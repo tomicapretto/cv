@@ -1,0 +1,7 @@
+posicion, fecha, institucion, que, detalles
+Contributor,  , \href{https://github.com/arviz-devs/arviz}{ArviZ},  , A library for exploratory analysis of Bayesian models with Python. It is currently used in more than 1700 OSS projects and 60 Python libraries.
+Contributor,  , \href{https://github.com/arviz-devs/arviz}{ArviZ},  , My \href{https://github.com/arviz-devs/arviz/pull/1284}{\underline{main contribution}} was the implementation from scratch of a more precise and efficient method for estimating density functions.
+Developer, , \href{https://github.com/bambinos/bambi}{Bambi}, , A high-level interface to construct and fit Bayesian models in \proglang{Python}.
+Developer, , \href{https://github.com/bambinos/bambi}{Bambi}, , I'm the main contributor in terms of commits and additions since 2020.
+"Author", , \href{https://github.com/bambinos/formulae}{formulae}, , An implementation of statistical formulas to specify mixed models in \proglang{Python} in a similar way to the \pkg{lme4} package in \proglang{R}.
+"Author", , \href{https://github.com/bambinos/formulae}{formulae}, , It is an alternative to \pkg{Patsy} that we use to specify models in \pkg{Bambi}.

@@ -1,0 +1,12 @@
+posicion, fecha, institucion, que, detalles
+"Advanced",  , R,  , "I have more than 5 years of experience with \proglang{R} and a pretty good understanding of how it works as a language. I write clean and efficient \proglang{R} code."
+"Advanced",  , R,  , "I can comfortably work with the \pkg{tidyverse} or other frameworks. I know how to use different OOP systems (S3 and R6)."
+"Advanced",  , R,  , "I am very well versed with \pkg{ggplot2} and associated libraries. I contributed \href{https://www.r-graph-gallery.com/web-lollipop-plot-with-R-the-office.html}{\underline{several}} \href{https://www.r-graph-gallery.com/web-circular-barplot-with-R-and-ggplot2.html}{\underline{articles}} to \href{https://www.r-graph-gallery.com/}{\underline{The R Gallery}}."
+"Advanced",  , R,  , "I have been using \pkg{Shiny} for three years now. It started as a means to make apps in \proglang{R} and ended up being my front door to web development."
+"Advanced",  , Python,  , "I am fluent with data science libraries such as \pkg{NumPy}, \pkg{SciPy}, \pkg{Pandas}, and \pkg{Matplotlib}. I contributed \href{https://www.python-graph-gallery.com/web-circular-lollipop-plot-with-matplotlib}{\underline{several}} \href{https://www.python-graph-gallery.com/web-streamchart-with-matplotlib}{\underline{articles}} to \href{https://www.python-graph-gallery.com/}{\underline{The Python Gallery}}."
+"Advanced",  , Python,  , "I am very proficient with probabilistic machine learning libraries such as \pkg{PyMC}."
+Misc skills and interests,  , "Others",  , "Fluent in English (C1 level). I work with both \proglang{Linux} and \proglang{Windows} and I use \proglang{git} on a daily basis. I'm very well versed with RMarkdown and \LaTeX ."
+Misc skills and interests,  , "Others",    , "I'm deeply interested in web technologies. I am familiar with (and have used) \proglang{Javascript}, \proglang{HTML}, \proglang{CSS}, \pkg{D3}, \pkg{React}, and \pkg{Next}."
+Misc skills and interests,  , "Others",    , "I have experience building \pkg{Shiny} apps that use \proglang{Python} through the \pkg{reticulate} package."
+Misc skills and interests,  , "Others",  , "I'm very curious and I'm constantly looking to learn new things. To give an example, I wanted to understand how programming languages worked so much that I ended up reading the book \href{www.craftinginterpreters.com}{\underline{Crafting Interpreters}} and wrote my own interpreter in \proglang{Java}."
+
