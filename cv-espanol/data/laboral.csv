@@ -1,12 +1,16 @@
 posicion,fecha,compania,lugar,detalles
-Cientítico de datos, Octubre 2021 - Actualidad, Grupo San Cristóbal, "Rosario, Argentina", Análisis de datos e implementación de modelos estádisticos.
-Cientítico de datos, Octubre 2021 - Actualidad, Grupo San Cristóbal, "Rosario, Argentina", Implementación de mejoras en procesos automatizados de toma de decisiones.
-Desarrollador, Junio 2021 - Agosto 2021, \href{https://tcapretto.netlify.app/post/2021-06-28-first-weeks-of-gsoc/}{NumFOCUS - Google Summer of Code 2021}, Remoto, Implementación de un nuevo método para proponer distribuciones a priori.
-Desarrollador, Junio 2021 - Agosto 2021, \href{https://tcapretto.netlify.app/post/2021-06-28-first-weeks-of-gsoc/}{NumFOCUS - Google Summer of Code 2021}, Remoto, Implementación de nuevas familias de modelos lineales generalizados.
-Desarrollador, Junio 2021 - Agosto 2021, \href{https://tcapretto.netlify.app/post/2021-06-28-first-weeks-of-gsoc/}{NumFOCUS - Google Summer of Code 2021}, Remoto, Varias refactorizaciones internas para mejorar desempeño y legibilidad del código.
-Freelance, Agosto 2020 - Actualidad, Independiente, Remoto, Construcción de aplicaciones en Shiny para analizar datos y automatizar tareas.
-Freelance, Agosto 2020 - Actualidad, Independiente, Remoto, Análisis de datos y desarrollo de modelos probabilísticos a medida.
-Consultant, Nov 2018 - Ene 2019, AlixPartners,"Buenos Aires, Argentina", Prediccion de series temporales y automatización de tareas.
-Asistente estadístico, May 2018 - Oct 2018, Instituto Nacional de Estadística y Censos, "Buenos Aires, Argentina", Trabaje en estimacion en presencia de no respuesta y realice estudios por simulación para evaluar metodos de imputación.
-Tutor online, Ago 2018 - May 2019, Chegg Tutors, Remoto, "Clases online de Estadística, \proglang{R} y \proglang{SAS} en inglés."
-Tutor online, Nov 2015 - Nov 2018, Latinhire, Remoto, Clases online de Estadística en inglés y español.
+Principal Data Scientist,Octubre 2021 - Actualidad,PyMC Labs,"Remoto",Desarrollo de modelos estadísticos Bayesianos en \pkg{PyMC}.
+Principal Data Scientist,Octubre 2021 - Actualidad,PyMC Labs,"Remoto","Trabajé en Maketing, Biotecnología, Psicometría, Finanzas, Investigación de mercado y más."
+Jefe de Trabajos Prácticos, Septiembre 2022 - Actualidad,Universidad Nacional de Rosario,"Rosario, Argentina",Estadística Bayesiana (Licenciatura en Estadística)
+Jefe de Trabajos Prácticos, Septiembre 2022 - Actualidad,Universidad Nacional de Rosario,"Rosario, Argentina",Análisis de Datos Multivariados (Licenciatura en Estadística)
+Auxiliar, Marzo 2022 - Agosto 2022,Universidad Nacional de Rosario,"Rosario, Argentina",Programación 1 (Tecnicatura Universitaria en Inteligencia Artificial)
+Cientítico de datos,Octubre 2021 - Septiembre 2022,Grupo San Cristóbal,"Rosario, Argentina",Análisis de datos e implementación de modelos estádisticos.
+Cientítico de datos,Octubre 2021 - Septiembre 2022,Grupo San Cristóbal,"Rosario, Argentina",Implementación de mejoras en procesos automatizados de toma de decisiones.
+Mentor,"Mayo 2023 - Agosto 2023",{NumFOCUS - Google Summer of Code 2023},Remoto, Mentor de \href{https://gstechschulte.github.io/}{\underline{Gabriel Steschulte}} en el proyecto \textit{Better tools to interpret complex Bambi regression models}.
+Co-mentor,"Mayo 2022 - Agosto 2022",{NumFOCUS - Google Summer of Code 2022},Remoto, Co-mentor de \href{https://yannmclatchie.github.io/}{\underline{Yann McLatchie}} en el proyecto \textit{Projection predictive variable selection for Bambi-fitted GLMs}.
+Desarrollador,Junio 2021 - Agosto 2021,\href{https://tomicapretto.com/post/2021-06-28-first-weeks-of-gsoc/}{NumFOCUS - Google Summer of Code 2021},Remoto,Implementación de nuevos métodos para proponer priors y familias de modelos lineales generalizados
+Desarrollador,Junio 2021 - Agosto 2021,\href{https://tomicapretto.com/post/2021-06-28-first-weeks-of-gsoc/}{NumFOCUS - Google Summer of Code 2021},Remoto,"Refactorización interna para mejorar desempeño, legibilidad y mantenibilidad del código."
+Consultant,Nov 2018 - Ene 2019,AlixPartners,"Buenos Aires, Argentina",Prediccion de series temporales y automatización de tareas.
+Asistente estadístico,May 2018 - Oct 2018,Instituto Nacional de Estadística y Censos,"Buenos Aires, Argentina",Trabaje en estimacion en presencia de no respuesta y realice estudios por simulación para evaluar metodos de imputación.
+Tutor online,Ago 2018 - May 2019,Chegg Tutors, Remoto,"Clases online de Estadística, \proglang{R} y \proglang{SAS} en inglés."
+Tutor online,Nov 2015 - Nov 2018,Latinhire, Remoto,Clases online de Estadística en inglés y español.
